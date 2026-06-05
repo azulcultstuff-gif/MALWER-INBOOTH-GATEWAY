@@ -84,19 +84,25 @@
                 </div>
 
                 <div class="home-main-grid">
-                    <nav class="side-menu-container">
+                    <nav class="side-menu-nav">
                         <button class="btn-fui" onclick="switchView('view-project-info')">INFORMACIÓN DEL PROYECTO</button>
-                        <button class="btn-fui" onclick="switchView('view-ppt')">PRESENTACIÓN INTRODUCTORIA</button>
-                        <button class="btn-fui green-v" onclick="switchView('view-library')">TRANSMEDIA DE PROYECTO</button>
-                        <button class="btn-fui green-v" onclick="switchView('view-business-model')">MODELO DE NEGOCIO</button>
-                        <button class="btn-fui purple-v" onclick="switchView('view-diagnostic')">DIAGNÓSTICO ECOSISTEMA</button>
-                        <button class="btn-fui purple-v" onclick="switchView('view-testing-hub')">TESTEOS</button>
+                        
+                        <!-- ACCESOS ACTUALIZADOS A DRIVE -->
+                        <a href="https://drive.google.com/drive/folders/13tdLyccjcJjVO60kClMKnSoH8Vjj98iT?usp=sharing" target="_blank" class="btn-fui green-v">TRANSMEDIA DE PROYECTO</a>
+                        <a href="https://drive.google.com/drive/folders/185nnfyUEuXOH6-EELm6utdQNcsGQdYWO?usp=sharing" target="_blank" class="btn-fui green-v">MODELO DE NEGOCIO</a>
+                        <a href="https://drive.google.com/drive/folders/1uoIX2HV9ScxPEWjw29HyKbPH4UuAHwkK?usp=sharing" target="_blank" class="btn-fui purple-v">PROTOTIPOS PREVIOS</a>
+                        <a href="https://drive.google.com/drive/folders/14rtZ75f7-VRuaZ_ohhja9vTl9_ejAIvx?usp=sharing" target="_blank" class="btn-fui purple-v">TESTEOS</a>
+                        
+                        <button class="btn-fui" onclick="switchView('view-diagnostic')">DIAGNÓSTICO ECOSISTEMA</button>
                         <button class="btn-fui" onclick="switchView('view-doc')">DOCUMENTACIÓN FINAL</button>
-                        <button class="btn-fui small-btn" onclick="switchView('view-references')">BIBLIOGRAFÍA</button>
+                        <button class="btn-fui small" onclick="switchView('view-references')">BIBLIOGRAFÍA</button>
+                        
+                        <!-- NUEVO ACCESO DRIVE GENERAL -->
+                        <a href="https://drive.google.com/drive/folders/1KIpcZsy-mBMpsPNUCYTAi_Rjm-EnHvV6?usp=sharing" target="_blank" class="btn-fui" style="border-color: #fff; color: #fff; margin-top: 10px;">◈ DRIVE GENERAL</a>
                     </nav>
 
-                    <div class="cta-center">
-                        <button class="btn-fui-cta pulse" onclick="switchView('view-transmedia-intro')">
+                    <div class="cta-central-box">
+                        <button class="btn-fui-cta" onclick="switchView('view-transmedia-intro')">
                             PRODUCTO: EXPERIENCIA TRANSMEDIA INTERACTIVA<br>
                             <span class="sub-label">(IN-BOOTH X MALWER)</span>
                         </button>
@@ -111,12 +117,12 @@
                     <button class="btn-fui back-btn" onclick="switchView('view-home')">← VOLVER</button>
                     <h2 class="neon-green">INFORMACIÓN_DEL_PROYECTO</h2>
                 </div>
-                <div class="project-info-grid">
+                <div class="info-dual-grid">
                     <div class="fui-box">
                         <h3 class="neon-purple">PREGUNTA DE DISEÑO</h3>
                         <p class="q-text-info">¿De qué manera el diseño de experiencias digitales interactivas puede mediar el vínculo entre los artistas y propuestas emergentes y sus audiencias dentro de la escena electrónica local de Bogotá, haciendo uso de mecanismos de interacción que mitiguen el carácter predominantemente receptivo de los usuarios y favorezca su participación en la dinámica de descubrimiento y vinculación con las propuestas artísticas?</p>
                     </div>
-                    <div class="fui-box scrollable-info">
+                    <div class="fui-box scrollable-v3">
                         <h3 class="neon-green">OBJETIVOS</h3>
                         <p class="obj-tag">OBJETIVO GENERAL:</p>
                         <p class="obj-p">Propiciar procesos de descubrimiento y vinculación entre los usuarios y las propuestas artísticas emergentes de la escena electrónica bogotana mediante la construcción de una experiencia digital interactiva que, mediante el desarrollo de nuevas formas de participación, contribuya a mitigar el rol pasivo del usuario y fortalecer su acercamiento a la propuesta artística, preservando la profundidad de la obra.</p>
@@ -156,8 +162,11 @@
                         <p>Uso de incertidumbre controlada y mecánicas de juego para transformar al espectador en un 'jugador activo' o 'portador del mensaje' antes del evento físico.</p>
                     </div>
                 </div>
-                <div class="action-footer">
+                <!-- NUEVOS ACCESOS EN PRODUCTO -->
+                <div class="action-footer" style="display: flex; gap: 20px; justify-content: center; margin-top: 40px; flex-wrap: wrap;">
                     <button class="btn-fui green pulse" onclick="switchView('view-transmedia-logic')">ACCEDER AL DIAGRAMA TÁCTICO</button>
+                    <a href="https://drive.google.com/drive/folders/1JDtZeHcnWwYNDuUV7AluomicsvXIwt0v?usp=sharing" target="_blank" class="btn-fui purple-v">ARCHIVOS EN DRIVE</a>
+                    <a href="https://drive.google.com/drive/folders/1YEo3Pb1__nfBJyXYZOnZ6vrnQyERe86l?usp=sharing" target="_blank" class="btn-fui color-2">PRESENTACIONES Y RECURSOS ADICIONALES</a>
                 </div>
             </div>
         </section>
@@ -192,185 +201,34 @@
                         <h3 id="node-id-title" class="neon-purple">PASAR MOUSE</h3>
                         <p id="narrative-content">Interactúe con los nodos para ver el desglose narrativo.</p>
                     </div>
-                    <button class="btn-fui green pulse" onclick="switchView('view-acts-links')">REPOSITORIOS GITHUB</button>
+                    <button class="btn-fui green" onclick="switchView('view-acts-links')">REPOSITORIOS GITHUB</button>
                 </div>
             </div>
         </section>
 
+        <!-- RESTO DE SECCIONES (ACTS, DIAGNOSTIC, REFS, DOC) SE MANTIENEN IGUAL -->
         <section id="view-acts-links" class="view">
             <div class="view-wrapper">
                 <div class="view-header">
                     <button class="btn-fui back-btn" onclick="switchView('view-transmedia-logic')">← VOLVER</button>
                     <h2 class="neon-green">ACTOS_DESPLIEGUE_WEB</h2>
                 </div>
-                <p class="indicator-v4">INDICACIÓN: PULSA EN ALGÚN ACTO PARA DIRIGIRTE A LA EXPERIENCIA_INTERACTIVA EN GITHUB.</p>
-                <div class="acts-horizontal-row-v4">
+                <div class="acts-row-horizontal-v4">
                     <div class="act-card-v4 fui-box">
-                        <span class="tag">ACTO I</span>
                         <h3>ARQUEOLOGÍA DIGITAL</h3>
-                        <p>Rastreo de señal y detección de radiofrecuencias satelitales.</p>
                         <a href="https://azulcultstuff-gif.github.io/MALWER-INBOOTH-ACTO-1-/" target="_blank" class="btn-fui small">GITHUB</a>
                     </div>
                     <div class="act-card-v4 fui-box">
-                        <span class="tag">ACTO II</span>
                         <h3>ENCRIPTACIÓN</h3>
-                        <p>Protocolo biométrico para la transformación del vector humano.</p>
                         <a href="https://azulcultstuff-gif.github.io/MALWER-INBOOTH-ACTO-2-/" target="_blank" class="btn-fui small">GITHUB</a>
                     </div>
                     <div class="act-card-v4 fui-box">
-                        <span class="tag">ACTO III</span>
                         <h3>FRECUENCIA</h3>
-                        <p>Revelación del virus como lenguaje sonoro inteligencia superior.</p>
                         <a href="https://azulcultstuff-gif.github.io/MALWER-INBOOTH-ACTO-3-/" target="_blank" class="btn-fui small">GITHUB</a>
                     </div>
                     <div class="act-card-v4 fui-box">
-                        <span class="tag">ACTO IV</span>
                         <h3>INVASIÓN</h3>
-                        <p>Interfaz de mando DJ y selección de comandante de asalto.</p>
                         <a href="https://azulcultstuff-gif.github.io/MALWER-INBOOTH-ACTO-4-/" target="_blank" class="btn-fui small">GITHUB</a>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section id="view-library" class="view">
-            <div class="view-wrapper">
-                <div class="view-header">
-                    <button class="btn-fui back-btn" onclick="switchView('view-home')">← VOLVER</button>
-                    <h2 class="neon-green">TRANSMEDIA_VISUAL_LIBRARY</h2>
-                </div>
-                <p class="hint-v4">CLICK EN LA IMAGEN PARA VISUALIZACIÓN DETALLADA (ZOOM/ARRASRE)</p>
-                <div class="library-grid-fui" id="library-container"></div>
-                <div class="video-section-v4">
-                    <button class="btn-fui purple-v" onclick="openMedia('vid', 'VIDEO_1-IN-BOOTH.mp4', 'VIDEO_PROMOCIONAL')">VER VIDEO_1-IN-BOOTH</button>
-                    <button class="btn-fui green-v" onclick="switchView('view-prototipo-1')">VER PROTOTIPO 1 (SLIDES)</button>
-                </div>
-            </div>
-        </section>
-
-        <section id="view-prototipo-1" class="view">
-            <div class="view-wrapper center-content">
-                <div class="view-header">
-                    <button class="btn-fui back-btn" onclick="switchView('view-library')">← VOLVER</button>
-                    <h2 class="neon-green">PROTOTIPO_1_DESARROLLO</h2>
-                </div>
-                <div class="aspect-16-9-box-v4 fui-box">
-                    <div class="slideshow-v4">
-                        <img id="proto1-img" src="assets/img/prototipo_1/1.jpg">
-                        <div class="slide-nav-v4">
-                            <button class="btn-fui small" onclick="changeSlide('proto', -1)">PREV</button>
-                            <span id="proto1-num">01 / 02</span>
-                            <button class="btn-fui small" onclick="changeSlide('proto', 1)">NEXT</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section id="view-business-model" class="view">
-            <div class="view-wrapper center-content">
-                <div class="view-header">
-                    <button class="btn-fui back-btn" onclick="switchView('view-home')">← VOLVER</button>
-                    <h2 class="neon-green">ESTRATEGIA_MODELO_NEGOCIO</h2>
-                </div>
-                <div class="aspect-16-9-box-v4 fui-box">
-                    <div class="slideshow-v4">
-                        <img id="biz-img" src="assets/img/modelo_de_negocio/1.png">
-                        <div class="slide-nav-v4">
-                            <button class="btn-fui small" onclick="changeSlide('biz', -1)">PREV</button>
-                            <span id="biz-num">01 / 07</span>
-                            <button class="btn-fui small" onclick="changeSlide('biz', 1)">NEXT</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section id="view-testing-hub" class="view">
-            <div class="view-wrapper">
-                <div class="view-header">
-                    <button class="btn-fui back-btn" onclick="switchView('view-home')">← VOLVER</button>
-                    <h2 class="neon-purple">TESTEOS_Y_VALIDACIÓN</h2>
-                </div>
-                <div class="testing-grid-v4">
-                    <div class="fui-box test-card-v4">
-                        <span class="tag">RESULTADOS</span>
-                        <h3>Protocolo de Testeo 2</h3>
-                        <p>Info técnica y síntesis de hallazgos (Imágenes).</p>
-                        <button class="btn-fui green-v small" onclick="switchView('view-test-protocol-2')">VER HALLAZGOS</button>
-                    </div>
-                    <div class="fui-box test-card-v4">
-                        <span class="tag">SESIONES</span>
-                        <h3>Transcripciones</h3>
-                        <div class="scroll-area-v4" id="trans-list-pdfs"></div>
-                    </div>
-                    <div class="fui-box test-card-v4">
-                        <span class="tag">AUDIOVISUAL</span>
-                        <h3>Registro Validación</h3>
-                        <button class="btn-fui small" onclick="openMedia('vid', 'TESTEO ESTRUCTURA - MALWER.mp4', 'TESTEO_ESTRUCTURA')">VIDEO TESTEO</button>
-                        <button class="btn-fui small" style="margin-top:10px" onclick="openMedia('pdf', 'Acta de Sesión_ Primer Testeo de Validación Conceptual y Técnica.pdf')">ACTA PDF</button>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section id="view-test-protocol-2" class="view">
-            <div class="view-wrapper center-content">
-                <div class="view-header">
-                    <button class="btn-fui back-btn" onclick="switchView('view-testing-hub')">← VOLVER</button>
-                    <h2 class="neon-green">PROTOCOLO_2_HALLAZGOS</h2>
-                </div>
-                <div class="aspect-16-9-box-v4 fui-box">
-                    <div class="slideshow-v4">
-                        <img id="test2-img" src="assets/img/protocolo_testeo_2/1.jpg">
-                        <div class="slide-nav-v4">
-                            <button class="btn-fui small" onclick="changeSlide('test', -1)">PREV</button>
-                            <span id="test2-num">01 / 06</span>
-                            <button class="btn-fui small" onclick="changeSlide('test', 1)">NEXT</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section id="view-references" class="view">
-            <div class="view-wrapper">
-                <div class="view-header">
-                    <button class="btn-fui back-btn" onclick="switchView('view-home')">← VOLVER</button>
-                    <h2 class="neon-green">BIBLIOGRAFÍA_DATA</h2>
-                </div>
-                <div class="fui-box ref-box-v4">
-                    <ul class="ref-ul-v4" id="ref-list-items"></ul>
-                </div>
-            </div>
-        </section>
-
-        <section id="view-doc" class="view">
-            <div class="view-wrapper full-h">
-                <div class="view-header">
-                    <button class="btn-fui back-btn" onclick="switchView('view-home')">← CERRAR</button>
-                    <h2 class="neon-green">PROYECTO_INV_COMPLETO</h2>
-                </div>
-                <div class="pdf-container-v4">
-                    <iframe src="assets/docs/ProyectoInv-IN-BOOTH_Díaz_Jorge.pdf" class="pdf-iframe-v4"></iframe>
-                </div>
-            </div>
-        </section>
-
-        <section id="view-ppt" class="view">
-            <div class="view-wrapper center-content">
-                <div class="view-header">
-                    <button class="btn-fui back-btn" onclick="switchView('view-home')">← VOLVER</button>
-                    <h2 class="neon-green">PRESENTACIÓN_INTRO</h2>
-                </div>
-                <div class="aspect-16-9-box-v4 fui-box">
-                    <div class="slideshow-v4">
-                        <img id="ppt-img" src="assets/img/ptt_inicio/1.jpg">
-                        <div class="slide-nav-v4">
-                            <button class="btn-fui small" onclick="changeSlide('ppt', -1)">PREV</button>
-                            <span id="ppt-num">01 / 10</span>
-                            <button class="btn-fui small" onclick="changeSlide('ppt', 1)">NEXT</button>
-                        </div>
                     </div>
                 </div>
             </div>
@@ -378,21 +236,11 @@
 
         <section id="view-diagnostic" class="view">
             <div class="view-wrapper">
-                <div class="view-header">
-                    <button class="btn-fui back-btn" onclick="switchView('view-home')">← VOLVER</button>
-                    <h2 class="neon-green">DIAGNÓSTICO_ENCUESTAS</h2>
-                </div>
+                <div class="view-header"><button class="btn-fui back-btn" onclick="switchView('view-home')">← VOLVER</button><h2 class="neon-green">DIAGNÓSTICO_ENCUESTAS</h2></div>
                 <div class="diag-v4-grid">
                     <div class="diag-v4-main fui-box">
-                        <div class="diag-v4-img-box">
-                            <img id="survey-display" src="">
-                            <div class="scanline-v4"></div>
-                        </div>
-                        <div class="diag-v4-nav">
-                            <button class="btn-fui small" onclick="changeSurvey(-1)">ANTERIOR</button>
-                            <span id="counter-display" class="neon-purple">-- / --</span>
-                            <button class="btn-fui small" onclick="changeSurvey(1)">SIGUIENTE</button>
-                        </div>
+                        <div class="diag-v4-img-box"><img id="survey-display" src=""><div class="scanline-v4"></div></div>
+                        <div class="diag-v4-nav"><button class="btn-fui small" onclick="changeSurvey(-1)">ANTERIOR</button><span id="counter-display" class="neon-purple">-- / --</span><button class="btn-fui small" onclick="changeSurvey(1)">SIGUIENTE</button></div>
                     </div>
                     <div class="diag-v4-side">
                         <button id="folder1-btn" class="btn-fui active small" onclick="selectSurveyFolder(1)">1RA_ENCUESTA (10)</button>
@@ -402,22 +250,21 @@
             </div>
         </section>
 
-    </main>
+        <section id="view-doc" class="view">
+            <div class="view-wrapper">
+                <div class="view-header"><button class="btn-fui back-btn" onclick="switchView('view-home')">← VOLVER</button><h2 class="neon-green">PROYECTO_INV_COMPLETO</h2></div>
+                <iframe src="assets/docs/ProyectoInv-IN-BOOTH_Díaz_Jorge.pdf" style="width:100%; height:75vh; border:1px solid #333;"></iframe>
+            </div>
+        </section>
 
-    <div id="media-modal" class="media-overlay">
-        <div class="media-ui-window">
-            <div class="media-ui-top">
-                <span id="media-title">SISTEMA_VISOR</span>
-                <button class="btn-fui small" onclick="closeMedia()">✕_CERRAR</button>
+        <section id="view-references" class="view">
+            <div class="view-wrapper">
+                <div class="view-header"><button class="btn-fui back-btn" onclick="switchView('view-home')">← VOLVER</button><h2 class="neon-green">BIBLIOGRAFÍA_DATA</h2></div>
+                <div class="fui-box ref-box-v4"><ul class="ref-ul-v4" id="ref-list-items"></ul></div>
             </div>
-            <div id="media-viewport"></div>
-            <div class="media-ui-bottom" id="img-zoom-tools">
-                <button class="btn-fui small" onclick="mediaZoom(1.2)">ZOOM (+)</button>
-                <button class="btn-fui small" onclick="mediaZoom(0.8)">ZOOM (-)</button>
-                <span class="hint-v4">ARRASTRE PARA NAVEGAR</span>
-            </div>
-        </div>
-    </div>
+        </section>
+
+    </main>
 
     <script src="script.js"></script>
 </body>
